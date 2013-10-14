@@ -1,5 +1,4 @@
 
-
 //处理翻页，格式为  <  1  ...  4  5  6  ...  9  >
 
 /*
@@ -16,7 +15,7 @@
  </div>
 */
 
-jQuery.fn.pageList = function(curIn,maxIn,callback){
+jQuery.fn.creatPage = function(curIn,maxIn,callback){
 
     var maxNp = maxIn,
         $wrap = $(this),
