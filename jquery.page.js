@@ -1,4 +1,3 @@
-
 //处理翻页，格式为  <  1  ...  4  5  6  ...  9  >
 
 /*
@@ -126,7 +125,7 @@ jQuery.fn.creatPage = function(curIn,maxIn,callback){
 
     var re = {};
     re.updateMax = function(num){
-        setMax(parseInt(num));
+        setMax(Math.ceil(num));
         onClick(parseInt(getCur()));
     };
     re.clickFirst = function(){
